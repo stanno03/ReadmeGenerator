@@ -98,6 +98,9 @@ function writeToFile(fileName, data) {
         if (error) {
           return console.log('There was an error writing the readMe file: ' + error);
         }
+        else{
+            console.log('Your Readme file has been generated')
+        }
     })
 }
 
@@ -106,8 +109,6 @@ function init() {
     inquirer.prompt(questions)
     .then((answers) => {
     const readme = generateMarkdown(answers)
-    console.log(readme)
-    console.log(answers.license)
     writeToFile('Readme.md', readme)
     })
    
