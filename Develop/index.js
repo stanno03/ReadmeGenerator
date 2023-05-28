@@ -54,7 +54,41 @@ const questions = [
                    
                 },
 
-               
+                {
+                    type: 'input',
+                    name: 'contribution',
+                    message: "Please define how to contribute to this project",
+                },
+
+                {
+                    type: 'input',
+                    name: 'tests',
+                    message: "Please detail testing for this project",
+                },
+
+                {
+                    type: 'input',
+                    name: 'depedanciess',
+                    message: "Please provide any dependancies for this project",
+                },
+
+                {
+                    type: 'input',
+                    name: 'todo',
+                    message: "Please provide the To-Do list for the project",
+                },
+
+                {
+                    type: 'input',
+                    name: 'githubUsername',
+                    message: "What is your Github Username?",
+                },
+
+                {
+                    type: 'input',
+                    name: 'email',
+                    message: "What is your email address?",
+                },           
 
 ];
 
@@ -62,7 +96,7 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, error => {
         if (error) {
-          return console.log('Sorry there was an error : ' + error);
+          return console.log('There was an error writing the readMe file: ' + error);
         }
     })
 }
