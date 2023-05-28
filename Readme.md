@@ -44,7 +44,11 @@ The project is covered under the Apache 2.0 license
   
   ## Demo
   
- 
+ This is a static screen shot of the application:
+ ![Screenshot](media/Readmegen.PNG)
+
+  Video Demo:
+  [Video Demo]("https://drive.google.com/file/d/16s_B3VrN_G82cEcF7X1gXr-dQmUNMvUq/view")
   
   
 
